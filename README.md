@@ -26,19 +26,6 @@ Le projet montre :
 *(Dans un labyrinthe parfait, « un » chemin == « le plus court » ; Backtracking est donc
 souvent plus rapide.)*
 
-
-La structure `Maze` mémorise :
-
-```c
-typedef struct {
-    int N, S, W, E;          // murs (1 = fermé, 0 = ouvert)
-    int back_visite;         // génération Backtracking
-    int solve_visite;        // résolution Backtracking
-    int distance;            // distance Dijkstra (-1 si inconnue)
-    int solution;            // =1 si appartient au chemin solution
-} Maze;
-````
-
 ---
 
 ## 2 . Compilation & exécution
@@ -48,19 +35,14 @@ typedef struct {
 | Outil | Version testée |
 | ----- | -------------- |
 | GCC   | ≥ 11 (C 17)    |
-| make  | GNU Make       |
 
 ### 2.2 . Build rapide
 
 ```bash
 # À la racine du projet
-make            # compile exécutable + éventuels tests
-./bin/labyrinth # lance le programme (voir options)
+gcc main.c -o mon_appli           # compile exécutable + éventuels tests
+.mon_appli # lance le programme
 ```
-
-* `make clean` supprime les objets et binaires.
-* Les **tests unitaires** se trouvent sous `Tests/`; exécutez‐les avec `make tests`.
-
 ---
 
 ## 3 . Utilisation
