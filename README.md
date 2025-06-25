@@ -1,11 +1,10 @@
-# Projet MIPP — Simulation de Labyrinthes en C
+# Projet MIPP - Simulation de Labyrinthes en C
 
 > Génération et résolution de **labyrinthes parfaits** (connexes et acycliques) à l’aide de  
 > deux algorithmes de génération (Backtracking, Division récursive) et deux algorithmes de  
 > résolution (Backtracking, Dijkstra).
 
-- **Auteurs :** Doubli Hoda & Ait Taleb Assia (GM3)  
-- **Encadrant :** M. Julien Saunier  
+- **Auteurs :** Doubli Hoda & Ait Taleb Assia (GM3)   
 - **Date :** novembre 2023  
 
 ---
