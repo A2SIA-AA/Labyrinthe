@@ -26,24 +26,6 @@ Le projet montre :
 *(Dans un labyrinthe parfait, « un » chemin == « le plus court » ; Backtracking est donc
 souvent plus rapide.)*
 
----
-
-## 2 . Structure du code
-
-```
-
-src/
-├── maze.h / maze.c          # structure Maze et helpers (creuse, candidats…)
-├── gen\_backtracking.c       # génération Backtracking
-├── gen\_division.c           # génération Division récursive
-├── solve\_backtracking.c     # résolution Backtracking
-├── solve\_dijkstra.c         # résolution Dijkstra
-└── main.c                   # CLI : choisir algorithme, tailles, affichage
-
-Makefile                     # compilation + tests + clean
-rapport.pdf                  # compte-rendu détaillé (ce document)
-
-````
 
 La structure `Maze` mémorise :
 
@@ -59,16 +41,16 @@ typedef struct {
 
 ---
 
-## 3 . Compilation & exécution
+## 2 . Compilation & exécution
 
-### 3.1 . Pré-requis
+### 2.1 . Pré-requis
 
 | Outil | Version testée |
 | ----- | -------------- |
 | GCC   | ≥ 11 (C 17)    |
 | make  | GNU Make       |
 
-### 3.2 . Build rapide
+### 2.2 . Build rapide
 
 ```bash
 # À la racine du projet
@@ -81,7 +63,7 @@ make            # compile exécutable + éventuels tests
 
 ---
 
-## 4 . Utilisation
+## 3 . Utilisation
 
 Au lancement, la CLI demande :
 
@@ -97,7 +79,7 @@ Le programme affiche ensuite :
 
 ---
 
-## 5 . Performances observées
+## 4 . Performances observées
 
 | Taille  | Génération Backtracking | Génération Division | Résolution Backtracking | Résolution Dijkstra |
 | ------- | ----------------------- | ------------------- | ----------------------- | ------------------- |
