@@ -1,4 +1,3 @@
-```markdown
 # Projet MIPP — Simulation de Labyrinthes en C
 
 > Génération et résolution de **labyrinthes parfaits** (connexes et acycliques) à l’aide de  
